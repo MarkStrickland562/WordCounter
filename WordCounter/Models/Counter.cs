@@ -129,7 +129,7 @@ namespace Counter.Models
     {
       int _counter = 0;
 
-      if (mySentence.Contains(myWord))
+      if (mySentence.ToUpper().Contains(myWord.ToUpper()))
       {
         string[] _mySentenceArray = mySentence.ToUpper().Split(new Char [] {' ', ',', ';', ':'});
 
