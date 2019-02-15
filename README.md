@@ -1,11 +1,10 @@
 # _Word Counter_
 
-#### _02/15/2019_
+#### _Date: 02/15/2019_
 ## Author
  _**Name:  Mark Strickland**_
 
  _**Email: markstrickland562@hotmail.com**_
-
 
 ## Description
 **_This program gathers a word and a sentence from a user and counts how many times the_**
@@ -31,11 +30,10 @@
 | A count will be taken of the number of times that the word exists in the sentence. A correct count will only include instance of the standalone word. | word="a" sentence="I am a student" | 1 | The word "a" exists once in "I am a student" |
 | An incorrect count will exclude existences of the word as part of another word | word="a" sentence="I am a student" | 2 | If the count is 2, the existence of "a" in another word has been counted in error |
 
-
 ## Instructions
-git clone https://github.com/MarkStrickland562/WordCounter.Solution
-cd WordCounter.Solution
-mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
+1. git clone https://github.com/MarkStrickland562/WordCounter.Solution
+2. cd WordCounter.Solution
+3. mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
 
 ## Technologies Used
 * _Mono_
@@ -46,7 +44,5 @@ mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
 
 
 ## License
-
-**
 
 Copyright (c) 2019 **_Mark Strickland_**
