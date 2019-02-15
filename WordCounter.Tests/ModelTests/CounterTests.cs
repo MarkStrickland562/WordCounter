@@ -144,5 +144,17 @@ namespace Counter.Tests
       Assert.AreEqual(updatedSentence, result);
     }
 
+    [TestMethod]
+    public void ValidateSentence_CheckExistence_False()
+    {
+      //Arrange
+      string mySentence = "";
+      Sentence newSentence = new Sentence(mySentence);
+
+      //Act
+
+      //Assert
+      Assert.AreEqual(false, newSentence.ValidateSentence(mySentence));
+    }
   }
 }

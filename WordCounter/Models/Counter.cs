@@ -66,5 +66,14 @@ namespace Counter.Models
     {
       _mySentence = newSentence;
     }
+
+    public bool ValidateSentence(string mySentence)
+    {
+      if (mySentence == "")
+      {
+        return false;
+      }
+      return true;
+    }
   }
 }
