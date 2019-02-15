@@ -33,7 +33,9 @@
 
 
 ## Instructions
-mcs WordCounert.cs Models/Counter.cs; mono WordCounter.exe
+git clone https://github.com/MarkStrickland562/WordCounter.Solution
+cd WordCounter.Solution
+mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
 
 ## Technologies Used
 * _Mono_
