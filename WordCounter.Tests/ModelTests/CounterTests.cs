@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using Counter.Models;
 
 namespace Counter.Tests
@@ -14,9 +15,11 @@ namespace Counter.Tests
       Word newWord = new Word(myWord);
 
       //Act
+      Type myWordType = typeof(Word);
+      Type newWordType = newWord.GetType();
 
       //Assert
-      Assert.AreEqual(typeof(Word), newWord.GetType());
+      Assert.AreEqual(myWordType, newWordType);
     }
 
     [TestMethod]
@@ -57,9 +60,10 @@ namespace Counter.Tests
       Word newWord = new Word(myWord);
 
       //Act
+      bool isValid = newWord.ValidateWord(myWord);
 
       //Assert
-      Assert.AreEqual(false, newWord.ValidateWord(myWord));
+      Assert.AreEqual(false, isValid);
     }
 
     [TestMethod]
@@ -70,9 +74,10 @@ namespace Counter.Tests
       Word newWord = new Word(myWord);
 
       //Act
+      bool isValid = newWord.ValidateWord(myWord);
 
       //Assert
-      Assert.AreEqual(true, newWord.ValidateWord(myWord));
+      Assert.AreEqual(true, isValid);
     }
 
     [TestMethod]
@@ -83,9 +88,9 @@ namespace Counter.Tests
       Word newWord = new Word(myWord);
 
       //Act
-
+      bool isValid = newWord.ValidateWord(myWord);
       //Assert
-      Assert.AreEqual(false, newWord.ValidateWord(myWord));
+      Assert.AreEqual(false, isValid);
     }
 
     [TestMethod]
@@ -96,9 +101,9 @@ namespace Counter.Tests
       Word newWord = new Word(myWord);
 
       //Act
-
+      bool isValid = newWord.ValidateWord(myWord);
       //Assert
-      Assert.AreEqual(false, newWord.ValidateWord(myWord));
+      Assert.AreEqual(false, isValid);
     }
 
     [TestMethod]
@@ -109,9 +114,11 @@ namespace Counter.Tests
       Sentence newSentence = new Sentence(mySentence);
 
       //Act
+      Type mySentenceType = typeof(Sentence);
+      Type newSentenceType = newSentence.GetType();
 
       //Assert
-      Assert.AreEqual(typeof(Sentence), newSentence.GetType());
+      Assert.AreEqual(mySentenceType, newSentenceType);
     }
 
     [TestMethod]
@@ -152,9 +159,10 @@ namespace Counter.Tests
       Sentence newSentence = new Sentence(mySentence);
 
       //Act
+      bool isValid = newSentence.ValidateSentence(mySentence);
 
       //Assert
-      Assert.AreEqual(false, newSentence.ValidateSentence(mySentence));
+      Assert.AreEqual(false, isValid);
     }
 
     [TestMethod]
@@ -165,9 +173,10 @@ namespace Counter.Tests
       Sentence newSentence = new Sentence(mySentence);
 
       //Act
+      bool isValid = newSentence.ValidateSentence(mySentence);
 
       //Assert
-      Assert.AreEqual(true, newSentence.ValidateSentence(mySentence));
+      Assert.AreEqual(true, isValid);
     }
 
     [TestMethod]
@@ -175,13 +184,13 @@ namespace Counter.Tests
     {
       //Arrange
       string mySentence = "1 @am a stud3nt!";
-      //string mySentence = "I am a student";   //Used for making sure that the test would fail correctly.
       Sentence newSentence = new Sentence(mySentence);
 
       //Act
+      bool isValid = newSentence.ValidateSentence(mySentence);
 
       //Assert
-      Assert.AreEqual(false, newSentence.ValidateSentence(mySentence));
+      Assert.AreEqual(false, isValid);
     }
 
     [TestMethod]
