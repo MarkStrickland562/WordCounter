@@ -69,7 +69,22 @@ namespace Counter.Models
 
     public bool ValidateSentence(string mySentence)
     {
+      char[] _mySentenceArray = mySentence.ToUpper().ToCharArray();
+      bool _alpha = true;
+
+      foreach (char ch in _mySentenceArray)
+      {
+        if (ch != ' ' && (ch < 'A' || ch > 'Z'))
+        {
+          _alpha = false;
+        }
+      }
+
       if (mySentence == "")
+      {
+        return false;
+      }
+      else if (!_alpha)
       {
         return false;
       }

@@ -169,5 +169,19 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(true, newSentence.ValidateSentence(mySentence));
     }
+
+    [TestMethod]
+    public void ValidateSentence_CheckAlphaOnly_false()
+    {
+      //Arrange
+      string mySentence = "1 @am a stud3nt!";
+      //string mySentence = "I am a student";   //Used for making sure that the test would fail correctly.
+      Sentence newSentence = new Sentence(mySentence);
+
+      //Act
+
+      //Assert
+      Assert.AreEqual(false, newSentence.ValidateSentence(mySentence));
+    }
   }
 }
