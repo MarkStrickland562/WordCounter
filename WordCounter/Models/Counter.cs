@@ -18,5 +18,10 @@ namespace Counter.Models
     {
       _myWord = newWord;
     }
+
+    public bool ValidateWord(string myWord)
+    {
+      return false;
+    }
   }
 }
