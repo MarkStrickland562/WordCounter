@@ -13,5 +13,10 @@ namespace Counter.Models
     {
       return _myWord;
     }
+
+    public void SetWord(string newWord)
+    {
+      _myWord = newWord;
+    }
   }
 }

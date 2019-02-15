@@ -32,5 +32,21 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(myWord, result);
     }
+
+    [TestMethod]
+    public void SetWord_SetWord_String()
+    {
+      //Arrange
+      string myWord = "test";
+      Word newWord = new Word(myWord);
+
+      //Act
+      string updatedWord = "newtest";
+      newWord.SetWord(updatedWord);
+      string result = newWord.GetWord();
+
+      //Assert
+      Assert.AreEqual(updatedWord, result);
+    }
   }
 }
