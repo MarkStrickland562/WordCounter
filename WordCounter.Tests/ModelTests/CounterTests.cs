@@ -183,5 +183,23 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(false, newSentence.ValidateSentence(mySentence));
     }
+
+    [TestMethod]
+    public void RepeatCounter_GetCount_Int()
+    {
+      //Arrange
+      string myWord = "a";
+      string mySentence = "I am a student";
+      Word newWord = new Word(myWord);
+      Sentence newSentence = new Sentence(mySentence);
+      string stringWord = newWord.GetWord();
+      string stringSentence = newSentence.GetSentence();
+
+      //Act
+      int myCount = RepeatCounter.GetCount(stringWord, stringSentence);
+
+      //Assert
+      Assert.AreEqual(1, myCount);
+    }
   }
 }

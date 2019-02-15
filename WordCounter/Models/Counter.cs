@@ -1,3 +1,5 @@
+using System;
+
 namespace Counter.Models
 {
   public class Word
@@ -89,6 +91,29 @@ namespace Counter.Models
         return false;
       }
       return true;
+    }
+  }
+
+  public class RepeatCounter
+  {
+    public static int GetCount(string myWord, string mySentence)
+    {
+      int _counter = 0;
+
+      if (mySentence.Contains(myWord))
+      {
+        string[] _mySentenceArray = mySentence.ToUpper().Split(new Char [] {' ', ',', ';', ':'});
+
+        foreach (string str in _mySentenceArray)
+        {
+          Console.WriteLine(str);
+          if (str == myWord.ToUpper())
+          {
+            _counter += 1;
+          }
+        }
+      }
+      return _counter;
     }
   }
 }
