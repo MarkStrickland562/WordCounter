@@ -1,0 +1,14 @@
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.deps.json
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.runtimeconfig.json
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.runtimeconfig.dev.json
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.csproj.CoreCompileInputs.cache
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.AssemblyInfo.cs
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.dll
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.Tests.pdb
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.dll
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp1.1\WordCounter.pdb
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.dll
+c:\Users\mstrickland\Desktop\Epicodus\Csharp\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp1.1\WordCounter.Tests.pdb
