@@ -128,5 +128,21 @@ namespace Counter.Tests
       Assert.AreEqual(mySentence, result);
     }
 
+    [TestMethod]
+    public void SetSentence_SetSentence_String()
+    {
+      //Arrange
+      string mySentence = "I am a student";
+      Sentence newSentence = new Sentence(mySentence);
+
+      //Act
+      string updatedSentence = "I am a good student";
+      newSentence.SetSentence(updatedSentence);
+      string result = newSentence.GetSentence();
+
+      //Assert
+      Assert.AreEqual(updatedSentence, result);
+    }
+
   }
 }

@@ -61,5 +61,10 @@ namespace Counter.Models
     {
       return _mySentence;
     }
+
+    public void SetSentence(string newSentence)
+    {
+      _mySentence = newSentence;
+    }
   }
 }
