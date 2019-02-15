@@ -8,6 +8,7 @@ namespace Counter.Tests
   public class CounterTest
   {
     [TestMethod]
+    // Verify that an instance of Word can be created.
     public void WordConstructor_CreatesInstanceOfWord()
     {
       //Arrange
@@ -23,6 +24,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that the Word getter method returns the value of the word.
     public void GetWord_ReturnsWord_String()
     {
       //Arrange
@@ -37,6 +39,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that the Word setter method can update the value of the word.
     public void SetWord_SetWord_String()
     {
       //Arrange
@@ -53,6 +56,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that a word was not actually entered.
     public void ValidateWord_CheckExistence_False()
     {
       //Arrange
@@ -67,6 +71,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that a word was actually entered.
     public void ValidateWord_CheckExistence_True()
     {
       //Arrange
@@ -81,6 +86,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that just one word was entered.
     public void ValidateWord_CheckOneWord_false()
     {
       //Arrange
@@ -94,6 +100,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that the word contains only alphabetic characters and no spaces.
     public void ValidateWord_CheckAlphaOnly_false()
     {
       //Arrange
@@ -107,6 +114,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that an instance of a Sentence can be created.
     public void SentenceConstructor_CreatesInstanceOfSentence()
     {
       //Arrange
@@ -122,6 +130,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that the Sentence getter method returns the value of the sentence.
     public void GetSentence_ReturnsSentence_String()
     {
       //Arrange
@@ -136,6 +145,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that the Sentence setter method can update the value of the sentence.
     public void SetSentence_SetSentence_String()
     {
       //Arrange
@@ -152,6 +162,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that a sentence was not actually entered.
     public void ValidateSentence_CheckExistence_False()
     {
       //Arrange
@@ -166,6 +177,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that a sentence was actually entered.
     public void ValidateSentence_CheckExistence_True()
     {
       //Arrange
@@ -180,6 +192,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that the sentence only contains alphabetic characters.
     public void ValidateSentence_CheckAlphaOnly_false()
     {
       //Arrange
@@ -194,6 +207,7 @@ namespace Counter.Tests
     }
 
     [TestMethod]
+    // Verify that the actual count of a word in a sentence matches the expected count.
     public void RepeatCounter_GetCount_Int()
     {
       //Arrange
