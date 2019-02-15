@@ -25,6 +25,10 @@ namespace Counter.Models
       {
         return false;
       }
+      else if (myWord.Contains(" "))
+      {
+        return false;
+      }
       return true;
     }
   }

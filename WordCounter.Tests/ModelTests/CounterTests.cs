@@ -74,5 +74,18 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(true, newWord.ValidateWord(myWord));
     }
+
+    [TestMethod]
+    public void ValidateWord_CheckOneWord_false()
+    {
+      //Arrange
+      string myWord = "two words";
+      Word newWord = new Word(myWord);
+
+      //Act
+
+      //Assert
+      Assert.AreEqual(false, newWord.ValidateWord(myWord));
+    }
   }
 }
