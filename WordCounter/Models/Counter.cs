@@ -46,6 +46,15 @@ namespace Counter.Models
       }
       return true;
     }
+  }
 
+  public class Sentence
+  {
+    private string _mySentence;
+
+    public Sentence (string mySentence)
+    {
+      _mySentence = mySentence;
+    }
   }
 }

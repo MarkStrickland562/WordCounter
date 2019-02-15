@@ -100,5 +100,18 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(false, newWord.ValidateWord(myWord));
     }
+
+    [TestMethod]
+    public void SentenceConstructor_CreatesInstanceOfSentence()
+    {
+      //Arrange
+      string mySentence = "I am a student";
+      Sentence newSentence = new Sentence(mySentence);
+
+      //Act
+
+      //Assert
+      Assert.AreEqual(typeof(Sentence), newSentence.GetType());
+    }
   }
 }
