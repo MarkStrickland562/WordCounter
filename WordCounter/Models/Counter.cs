@@ -8,5 +8,10 @@ namespace Counter.Models
     {
       _myWord = myWord;
     }
+
+    public string GetWord()
+    {
+      return _myWord;
+    }
   }
 }

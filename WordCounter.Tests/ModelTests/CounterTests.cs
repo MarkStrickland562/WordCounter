@@ -9,8 +9,28 @@ namespace Counter.Tests
     [TestMethod]
     public void WordConstructor_CreatesInstanceOfWord()
     {
-      Word newWord = new Word("test");
+      //Arrange
+      string myWord = "test";
+      Word newWord = new Word(myWord);
+
+      //Act
+
+      //Assert
       Assert.AreEqual(typeof(Word), newWord.GetType());
+    }
+
+    [TestMethod]
+    public void GetWord_ReturnsWord_String()
+    {
+      //Arrange
+      string myWord = "test";
+      Word newWord = new Word(myWord);
+
+      //Act
+      string result = newWord.GetWord();
+
+      //Assert
+      Assert.AreEqual(myWord, result);
     }
   }
 }
