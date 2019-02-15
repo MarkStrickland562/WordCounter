@@ -21,7 +21,11 @@ namespace Counter.Models
 
     public bool ValidateWord(string myWord)
     {
-      return false;
+      if (myWord == "")
+      {
+        return false;
+      }
+      return true;
     }
   }
 }
