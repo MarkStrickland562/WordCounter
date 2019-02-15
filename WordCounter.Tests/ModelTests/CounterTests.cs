@@ -113,5 +113,20 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(typeof(Sentence), newSentence.GetType());
     }
+
+    [TestMethod]
+    public void GetSentence_ReturnsSentence_String()
+    {
+      //Arrange
+      string mySentence = "I am a student";
+      Sentence newSentence = new Sentence(mySentence);
+
+      //Act
+      string result = newSentence.GetSentence();
+
+      //Assert
+      Assert.AreEqual(mySentence, result);
+    }
+
   }
 }

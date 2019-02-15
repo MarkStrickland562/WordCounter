@@ -56,5 +56,10 @@ namespace Counter.Models
     {
       _mySentence = mySentence;
     }
+
+    public string GetSentence()
+    {
+      return _mySentence;
+    }
   }
 }
