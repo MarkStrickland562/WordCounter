@@ -21,6 +21,17 @@ namespace Counter.Models
 
     public bool ValidateWord(string myWord)
     {
+      char[] _myWordArray = myWord.ToUpper().ToCharArray();
+      bool _alpha = true;
+
+      foreach (char ch in _myWordArray)
+      {
+        if (ch < 'A' || ch > 'Z')
+        {
+          _alpha = false;
+        }
+      }
+
       if (myWord == "")
       {
         return false;
@@ -29,7 +40,12 @@ namespace Counter.Models
       {
         return false;
       }
+      else if (!_alpha)
+      {
+        return false;
+      }
       return true;
     }
+
   }
 }

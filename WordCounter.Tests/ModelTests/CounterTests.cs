@@ -87,5 +87,18 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(false, newWord.ValidateWord(myWord));
     }
+
+    [TestMethod]
+    public void ValidateWord_CheckAlphaOnly_false()
+    {
+      //Arrange
+      string myWord = "1 word!";
+      Word newWord = new Word(myWord);
+
+      //Act
+
+      //Assert
+      Assert.AreEqual(false, newWord.ValidateWord(myWord));
+    }
   }
 }
