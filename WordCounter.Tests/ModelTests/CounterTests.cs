@@ -156,5 +156,18 @@ namespace Counter.Tests
       //Assert
       Assert.AreEqual(false, newSentence.ValidateSentence(mySentence));
     }
+
+    [TestMethod]
+    public void ValidateSentence_CheckExistence_True()
+    {
+      //Arrange
+      string mySentence = "I am a student";
+      Sentence newSentence = new Sentence(mySentence);
+
+      //Act
+
+      //Assert
+      Assert.AreEqual(true, newSentence.ValidateSentence(mySentence));
+    }
   }
 }
