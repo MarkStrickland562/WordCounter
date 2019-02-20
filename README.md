@@ -44,13 +44,13 @@ Change into the work directory: $ cd WordCounter.Solution
 
 To run the program, navigate to the location of the WordCounter.cs file then compile and execute:
 
-$ cd WordCounter
-$ mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
+    $ cd WordCounter
+    $ mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
 
 To run the tests for this project, change back into the solution directory, WordCounter.Solution, then use these commands:
 
-$ cd WordCounter.Tests
-$ dotnet test
+    $ cd WordCounter.Tests
+    $ dotnet test
 
 
 ## Technologies Used
