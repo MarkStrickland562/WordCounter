@@ -31,11 +31,33 @@
 | An incorrect count will exclude existences of the word as part of another word | word="a" sentence="I am a student" | 2 | If the count is 2, the existence of "a" in another word has been counted in error |
 
 ## Instructions
-1. git clone https://github.com/MarkStrickland562/WordCounter.Solution
-2. cd WordCounter.Solution
-3. mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
+Download and install the following required software packages"
+1. .NET Core 1.1.4 SDK
+2. .NET Core Runtime 1.1.2
+3. Mono
+
+Clone this repository as follows: $ git clone https://github.com/MarkStrickland562/WordCounter.Solution
+
+To edit the project, open the project in your preferred text editor.
+
+Change into the work directory:: $ cd WordCounter.Solution
+
+To run the program:
+
+Navigate to the location of the WordCounter.cs file then compile and execute:
+
+$ cd WordCounter
+$ mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
+
+To run the tests for this project, change back into the solution directory, WordCounter.Solution, then use these commands:
+
+$ cd WordCounter.Tests
+$ dotnet test
+
 
 ## Technologies Used
+* _.NET Core 1.1.4 SDK_
+* _.NET Core Runtime 1.1.2
 * _Mono_
 * _C#_
 * _MSTest_
