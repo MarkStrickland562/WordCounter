@@ -40,11 +40,9 @@ Clone this repository as follows: $ git clone https://github.com/MarkStrickland5
 
 To edit the project, open the project in your preferred text editor.
 
-Change into the work directory:: $ cd WordCounter.Solution
+Change into the work directory: $ cd WordCounter.Solution
 
-To run the program:
-
-Navigate to the location of the WordCounter.cs file then compile and execute:
+To run the program, navigate to the location of the WordCounter.cs file then compile and execute:
 
 $ cd WordCounter
 $ mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
