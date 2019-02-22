@@ -13,7 +13,7 @@ namespace WordCounter.Tests
     public void Index_ReturnsCorrectView_True()
     {
       //Arrange
-      WordCounterController controller = new WordCounterController();
+      WordCountersController controller = new WordCountersController();
 
       //Act
       ActionResult newView = controller.New();

@@ -16,7 +16,6 @@ namespace WordCounter.Models
 
         foreach (string str in _mySentenceArray)
         {
-          Console.WriteLine(str);
           if (str == myWord.ToUpper())
           {
             _counter += 1;

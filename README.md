@@ -29,6 +29,7 @@
 | The sentence will not contain any non-English alphabetic characters | "I @m a stud3nt" | "Your sentence is invalid." | N/A |
 | A count will be taken of the number of times that the word exists in the sentence. A correct count will only include instance of the standalone word. | word="a" sentence="I am a student" | 1 | The word "a" exists once in "I am a student" |
 | An incorrect count will exclude existences of the word as part of another word | word="a" sentence="I am a student" | 2 | If the count is 2, the existence of "a" in another word has been counted in error |
+| The user can enter any number of words and sentences and each set will be displayed with their counts |word1="test1", sentence1="A sentence for test1", word2="test2", sentence2="A sentence for test2" | "test1", "A sentence for test1", 1, "test2", "A sentence for test2", 1 | The user always see the results of their game play |
 
 ## Instructions
 Download and install the following required software packages"
