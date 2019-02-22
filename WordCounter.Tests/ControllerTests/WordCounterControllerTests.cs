@@ -35,7 +35,6 @@ namespace WordCounter.Tests
       Assert.IsInstanceOfType(newView, typeof(ViewResult));
     }
 
-
     [TestMethod]
     public void Index_HasCorrectModelType_GameList()
     {
@@ -50,5 +49,17 @@ namespace WordCounter.Tests
       Assert.IsInstanceOfType(result, typeof(List<Game>));
     }
 
+    [TestMethod]
+    public void Create_ReturnsCorrectActionType_ViewResult()
+    {
+      //Arrange
+      WordCounterController controller = new WordCounterController();
+
+      //Act
+      IActionResult view = controller.Create("test", "A sentence for test");
+
+      //Assert
+      Assert.IsInstanceOfType(view, typeof(ViewResult));
+    }
   }
 }
