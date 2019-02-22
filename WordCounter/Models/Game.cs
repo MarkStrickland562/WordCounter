@@ -22,6 +22,21 @@ namespace WordCounter.Models
       _id = _games.Count;
     }
 
+    public string GetWord()
+    {
+      return _myWord;
+    }
+
+    public string GetSentence()
+    {
+      return _mySentence;
+    }
+
+    public int GetCount()
+    {
+      return _myCount;
+    }
+
     public static List<Game> GetAll()
     {
       return _games;

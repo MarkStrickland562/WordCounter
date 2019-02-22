@@ -14,6 +14,57 @@ namespace WordCounter.Tests
     }
 
     [TestMethod]
+    // Verify that the Word getter method returns the value of the word.
+    public void GetWord_ReturnsWord_String()
+    {
+      //Arrange
+      string myWord = "test1";
+      string mySentence = "A sentence for test1";
+      int myCount = 1;
+      Game newGame = new Game(myWord, mySentence, myCount);
+
+      //Act
+      string result = newGame.GetWord();
+
+      //Assert
+      Assert.AreEqual(myWord, result);
+    }
+
+    [TestMethod]
+    // Verify that the Sentence getter method returns the value of the sentence.
+    public void GetSentence_ReturnsSentence_String()
+    {
+      //Arrange
+      string myWord = "test1";
+      string mySentence = "A sentence for test1";
+      int myCount = 1;
+      Game newGame = new Game(myWord, mySentence, myCount);
+
+      //Act
+      string result = newGame.GetSentence();
+
+      //Assert
+      Assert.AreEqual(mySentence, result);
+    }
+
+    [TestMethod]
+    // Verify that the Count getter method returns the value of the count.
+    public void GetCount_ReturnsCount_Int()
+    {
+      //Arrange
+      string myWord = "test1";
+      string mySentence = "A sentence for test1";
+      int myCount = 1;
+      Game newGame = new Game(myWord, mySentence, myCount);
+
+      //Act
+      int result = newGame.GetCount();
+
+      //Assert
+      Assert.AreEqual(myCount, result);
+    }
+
+    [TestMethod]
     public void GetAll_ReturnsAllGames_GameList()
     {
       //Arrange
