@@ -1,13 +1,23 @@
-<h1>Games</h1>
-
-@if (@Model.Count == 0)
-{
-  <h3>No games have been played yet!</h3>
+@{
+  Layout = "_Layout";
 }
 
-@foreach (var game in Model)
-{
-  <h3><a>Word: @game.GetWord()   Sentence: @game.GetSentence()    Count: @game.GetCount()</a></h3>
-}
+<div class="container-content label">
+  <h1>Games</h1>
+  <br>
 
-<p><a href='/wordcounters/new'>Play again</a></p>
+  @if (@Model.Count == 0)
+  {
+    <h3>No games have been played yet!</h3>
+  }
+
+  @foreach (var game in Model)
+  {
+    <p class="result">Word: @game.GetWord()</p>
+    <p class="result">Sentence: @game.GetSentence()</p>
+    <p class="result">Count: @game.GetCount()</p>
+    <br>
+  }
+
+  <p><a class="link" href='/wordcounters/new'>Play again</a></p>
+</div>

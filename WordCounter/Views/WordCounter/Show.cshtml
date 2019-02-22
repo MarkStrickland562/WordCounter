@@ -1,8 +1,16 @@
-<h3>Result</h3>
+@{
+  Layout = "_Layout";
+}
 
-<p>@Model.GetCount()</p>
-<br>
-
-<p><a href="/">Start Over</a></p>
-<p><a href="/wordcounters/new">Play again.</a></p>
-<p><a href="/wordcounters">Show my games.</a></p>
+<div class="container-content label">
+  <h1>Result</h1>
+  <div class="result">
+    <br>
+    <p>The word &quot;@Model.GetWord()&quot; occurs in the sentence &quot;@Model.GetSentence()&quot; @Model.GetCount() time(s)!</p>
+  </div>
+  <div class="label">
+    <p><a class="link" href="/">Start Over</a></p>
+    <p><a class="link" href="/wordcounters/new">Play Again</a></p>
+    <p><a class="link" href="/wordcounters">Show All of My Results</a></p>
+  </div>
+</div>
