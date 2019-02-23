@@ -25,9 +25,25 @@ namespace WordCounter.Controllers
     {
       Word newWord = new Word(myWord);
       Sentence newSentence = new Sentence(mySentence);
-      int newCount = RepeatCounter.GetCount(newWord.GetWord(), newSentence.GetSentence());
-      Game newGame = new Game(newWord.GetWord(), newSentence.GetSentence(), newCount);
-      return View("Show", newGame);
+
+      if (!(string.IsNullOrEmpty(newWord.GetWord())) && !(string.IsNullOrEmpty(newSentence.GetSentence())))
+      {
+        if (newWord.ValidateWord(newWord.GetWord()) && newSentence.ValidateSentence(newSentence.GetSentence()))
+        {
+          int newCount = RepeatCounter.GetCount(newWord.GetWord(), newSentence.GetSentence());
+          Game newGame = new Game(newWord.GetWord(), newSentence.GetSentence(), newCount);
+
+          return View("Show", newGame);
+        }
+        else
+        {
+          return View("New");
+        }
+      }
+      else
+      {
+        return View("New");
+      }
     }
   }
 }

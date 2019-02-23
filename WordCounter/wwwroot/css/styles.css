@@ -30,7 +30,8 @@ html, body {
 }
 
 .btn-submit {
-  color: green;
+  background-color: green;
+  color: white;
   font-weight: bold;
   border-radius: 5px:
 }
