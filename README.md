@@ -43,16 +43,18 @@ To edit the project, open the project in your preferred text editor.
 
 Change into the work directory: $ cd WordCounter.Solution
 
-To run the program, navigate to the location of the WordCounter.cs file then compile and execute:
+To run the program, navigate to the production directory and build and run the application:
 
     $ cd WordCounter
-    $ mcs WordCounter.cs Models/Counter.cs; mono WordCounter.exe
+    $ dotnet build
+    $ dotnet run
+
+Then navigate to the site in a browser with "http://localhost:5000".
 
 To run the tests for this project, change back into the solution directory, WordCounter.Solution, then use these commands:
 
     $ cd WordCounter.Tests
     $ dotnet test
-
 
 ## Technologies Used
 * _.NET Core 1.1.4 SDK_
